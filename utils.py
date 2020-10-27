@@ -118,7 +118,7 @@ def txt_file_avg_genderedness(file_name, E, gender_dir, sw_file=STOPWORDS_FILE, 
     text = ' '.join(open(file_name, 'r').readlines())
     sw = load_stopwords(sw_file)
     if keep_gendered_sws:
-        keep = ["mrs", "ms", "she", "her", "hers", "herself", "mr", "he", "his", "himself"]
+        keep = ["mrs", "ms", "she", "her", "hers", "herself", "mr", "he", "his", "himself", "him"]
         sw = [w for w in sw if w not in keep]
     words = tokenize(text, stemming=False, stoplist=sw)
     genderedness = 0

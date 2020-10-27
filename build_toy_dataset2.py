@@ -18,7 +18,6 @@ if __name__ == "__main__":
             filename = utils.get_corpus_path(collection) + "/" + job + "_" + adj + ".txt"
             text = "The " + job + " is " + adj
             with open(filename, "w", encoding='utf8') as f:
-            # file = open(filename, "w")
                 f.write(text)
                 f.close()
 

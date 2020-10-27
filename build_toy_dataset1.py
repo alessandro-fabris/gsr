@@ -14,7 +14,6 @@ if __name__ == "__main__":
             filename = utils.get_corpus_path(collection) + "/" + person + "_" + job + ".txt"
             text = "The " + person + " is a " + job
             with open(filename, "w", encoding='utf8') as f:
-            # file = open(filename, "w")
                 f.write(text)
                 f.close()
 
